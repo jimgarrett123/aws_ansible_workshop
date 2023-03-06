@@ -4,19 +4,23 @@
 <h2>Introduction</h2>
 
 
-Thank you for using the **Red Hat Ansible Automation Platform on AWS** RHPDS lab environment.
+Thank you for using the **Red Hat Ansible Automation Platform on AWS** lab environment.
 
 <h2>Prerequisites</h2>
 
 <h3>Red Hat Account</h3>
 
 
-You will need a valid Red Hat account in order to retrieve an Ansible entitlement once the application is deployed.  In order to avoid possible corporate permissions issues, it is recommended that you create a personal account and use this when performing this lab.  Please create a personal account and ensure that you are able to login to **[console.redhat.com](https://console.redhat.com)** successfully.  [Red Hat Hybrid Cloud Console](https://console.redhat.com/)
+You will need a valid Red Hat account in order to retrieve an Ansible entitlement.  In order to avoid possible corporate permissions issues, it's recommended that you create a personal account and use this when performing this lab.  Please create a personal account and ensure that you are able to login to **[Red Hat Hybrid Cloud Console](https://console.redhat.com/)** successfully.
 
-<h3>AWS Credentials / Keys</h3>
+<h3>Obtain AWS Credentials/Keys</h3>
 
 
 You will get these **from your instructor**.  You will need the console link, and the credentials to proceed.
+
+After obtaining these from your instructor, please click on the the link below **Deploying AAP on AWS from the AWS Marketplace**
+
+[Deploying AAP on AWS from the AWS Marketplace]pages/page1.adoc
 
 <h2>Deploying AAP on AWS from the AWS Marketplace</h2>
 
