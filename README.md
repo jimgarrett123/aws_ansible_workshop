@@ -64,7 +64,7 @@ You will get these **from your instructor**.  You will need the console link, an
 ![alt_text](images/image4.png "image_tooltip")
 
 6. Now you are [Subscribed to the AMI Private Offer](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-private-offers-subscribing-ami-private-offer.html) named **Red Hat Ansible Automation Platform 2 - Up to 100 Managed Nodes.**
-7. After subscribing to the Foundational offer, Letís go ahead and start to deploy Ansible Automation Platform on AWS.
+7. After subscribing to the Foundational offer, Let‚Äôs go ahead and start to deploy Ansible Automation Platform on AWS.
 
 ![alt_text](images/image5.png "image_tooltip")
 
@@ -78,7 +78,7 @@ You will get these **from your instructor**.  You will need the console link, an
 
 
 
-1. Now that you have launched the cloudformation stack, youíre ready to start configuration prior to launching the AAP on AWS offer.
+1. Now that you have launched the cloudformation stack, you‚Äôre ready to start configuration prior to launching the AAP on AWS offer.
 2. For the **Fulfillment option**, please select **Ansible Platform CloudFormation Topology.**
 3. For the **Software version**, please select the latest version / date available in the list.
 4. For the **Region**, please select the region that you decided on earlier
@@ -129,7 +129,7 @@ When AAP on AWS is deployed, it is deployed into an isolated VPC and cannot be a
 
 **Instructions**:
 
-AAP on AWS is deployed into its own VPC on a private network.  In order to access the application UIís (controller and hub) there are some steps to follow
+AAP on AWS is deployed into its own VPC on a private network.  In order to access the application UI‚Äôs (controller and hub) there are some steps to follow
 
 
 
@@ -140,13 +140,13 @@ AAP on AWS is deployed into its own VPC on a private network.  In order to acces
 2.1. Select **Create target group**.  For Target type, change from Instance to **Application Load Balancer**.  Enter a **Target group name** of **controller-tg**, then from the **VPC** drop-down select your **aap/network/vpc**.  Then click **Next**.
 ![alt_text](images/image14.png "image_tooltip")
 
-2.2. On the next screen register the target(s).  From the drop-down select the **Controllerís** load balancer. It will be named **\<your-initials\>-aa-contr-\<generated-string\>,** where **\<your-initials\>** is your initials and **\<generated-string\>** is a string of random characters.  Then select **Create target group**.
+2.2. On the next screen register the target(s).  From the drop-down select the **Controller‚Äôs** load balancer. It will be named **\<your-initials\>-aa-contr-\<generated-string\>,** where **\<your-initials\>** is your initials and **\<generated-string\>** is a string of random characters.  Then select **Create target group**.
 ![alt_text](images/image15.png "image_tooltip")
 
 
 3. Similarly, Create a target group for the Private Automation Hub.  From the **EC2 dashboard** scroll down to the **Target Groups** under **Load Balancing**.
     1. Select **Create target group**.  For Target type, change from Instance to **Application Load Balancer**.  Enter a **Target group name** of **hub-tg**, then from the **VPC** drop-down select your **aap/network/vpc**.  Then click **Next**.
-    2. On the next screen register the target(s).  From the drop-down select the **Hubís** load balancer.  It will be named **\<your-initials\>-aa-hubal-\<generated-string\>,** where **\<your-initials\>** is your initials and **\<generated-string\>** is a string of random characters. Then select **Create target group**.
+    2. On the next screen register the target(s).  From the drop-down select the **Hub‚Äôs** load balancer.  It will be named **\<your-initials\>-aa-hubal-\<generated-string\>,** where **\<your-initials\>** is your initials and **\<generated-string\>** is a string of random characters. Then select **Create target group**.
 
 ![alt_text](images/image16.png "image_tooltip")
 
@@ -247,25 +247,25 @@ AAP on AWS is deployed into its own VPC on a private network.  In order to acces
 
 
 
-1. Click the ì**Resources**î in the left menu, then click ì**Credentials**î.
-2. Click the ì**Add**î button.
-3. Select ì**Amazon Web Services**î from the **Credential Type** drop down menu.
+1. Click the ‚Äú**Resources**‚Äù in the left menu, then click ‚Äú**Credentials**‚Äù.
+2. Click the ‚Äú**Add**‚Äù button.
+3. Select ‚Äú**Amazon Web Services**‚Äù from the **Credential Type** drop down menu.
 4. Fill the following fields:
     1. **Name:** AWS - Access Key
     2. **Access Key:** Use the access key provided via RHPDS.
     3. **Secret Key:** Use the secret key provided via RHPDS.
 ![alt_text](images/image27.png "image_tooltip")
-5. Click the ì**Save**î button.
+5. Click the ‚Äú**Save**‚Äù button.
 
 ***
 <h4>Execution Environment</h4>
 
-1. Click the ì**Execution Environments**î link under ì**Administration**î in the left menu.
-2. Click the ì**Add**î button.
+1. Click the ‚Äú**Execution Environments**‚Äù link under ‚Äú**Administration**‚Äù in the left menu.
+2. Click the ‚Äú**Add**‚Äù button.
 3. Fill the following fields:
     1. **Name**: Cloud EE
     2. **Image**: quay.io/scottharwell/aws-ee:latest
-4. Click ì**Save**î at the bottom of the screen.
+4. Click ‚Äú**Save**‚Äù at the bottom of the screen.
 
 ***
 <h4>Projects</h4>
@@ -276,17 +276,17 @@ AAP on AWS is deployed into its own VPC on a private network.  In order to acces
 
 
 
-1. Click the ì**Projects**î link under ì**Resources**î in the left menu.
-2. Click the ì**Add**î button.
+1. Click the ‚Äú**Projects**‚Äù link under ‚Äú**Resources**‚Äù in the left menu.
+2. Click the ‚Äú**Add**‚Äù button.
 3. Fill the following fields:
     1. **Name**:  AWS - Content Lab Infrastructure Config Demos
     2. **Execution Environment**: Cloud EE
     3. **Organization**: Default
     4. **Source Control Type**: Git
     5. **Source Control URL**: https://github.com/ansible-content-lab/aws.infrastructure_config_demos.git
-4. Click ì**Save**î at the bottom of the screen.
+4. Click ‚Äú**Save**‚Äù at the bottom of the screen.
 
-Make sure it has synchronized and shows ì**Successful**î.  If it doesnít show successful you can click on the synchronize **icon** in the **Actions** column. \
+Make sure it has synchronized and shows ‚Äú**Successful**‚Äù.  If it doesn‚Äôt show successful you can click on the synchronize **icon** in the **Actions** column. \
 
 ![alt_text](images/image28.png "image_tooltip")
 
@@ -300,8 +300,8 @@ This job will deploy a transit peering network model as described in the collect
 
 
 
-1. Click the ì**Templates**î link under ì**Resources**î in the left menu.
-2. Click the ì**Add**î button, then ì**Add job Template**î.
+1. Click the ‚Äú**Templates**‚Äù link under ‚Äú**Resources**‚Äù in the left menu.
+2. Click the ‚Äú**Add**‚Äù button, then ‚Äú**Add job Template**‚Äù.
 3. Fill the following fields:
     1. **Name**: AWS - Create Transit Network
     2. **Job Type**: Run
@@ -391,15 +391,15 @@ priv_network_ssh_key_name: hm-aaponaws-jan2023
 
 
 
-4. Click ì**Save**î at the bottom of the screen.
+4. Click ‚Äú**Save**‚Äù at the bottom of the screen.
 
 <h5>Delete Transit Network</h5>
 
 
 
 
-1. Click the ì**Templates**î link under ì**Resources**î in the left menu.
-2. Click the ì**Add**î button, then ì**Add job Template**î.
+1. Click the ‚Äú**Templates**‚Äù link under ‚Äú**Resources**‚Äù in the left menu.
+2. Click the ‚Äú**Add**‚Äù button, then ‚Äú**Add job Template**‚Äù.
 3. Fill the following fields:
     1. **Name**:  AWS - Delete Transit Network
     2. **Job Type**: Run
@@ -415,7 +415,7 @@ aws_region: <your-aws-region> # Replace with your region
 ```
 
 
-4. Click ì**Save**î at the bottom of the screen.
+4. Click ‚Äú**Save**‚Äù at the bottom of the screen.
 
 ***
 <h5>Create VM</h5>
@@ -425,8 +425,8 @@ This job will create a virtual machine in an existing AWS VPC as described in th
 
 
 
-1. Click the ì**Templates**î link under ì**Resources**î in the left menu.
-2. Click the ì**Add**î button, then ì**Add job Template**î.
+1. Click the ‚Äú**Templates**‚Äù link under ‚Äú**Resources**‚Äù in the left menu.
+2. Click the ‚Äú**Add**‚Äù button, then ‚Äú**Add job Template**‚Äù.
 3. Fill the following fields:
     1. **Name**: AWS - Create RHEL 8 VM
     2. **Job Type**: Run
@@ -434,7 +434,7 @@ This job will create a virtual machine in an existing AWS VPC as described in th
     4. **Project**: AWS - Content Lab Infrastructure Config Demos
     5. **Playbook**: playbook_create_vm.yml
     6. **Credentials**: AWS - Access Key
-    7. **Variables, please check ìPrompt on launchî**.  **This is because some of these values wonít be available until later AFTER you run the ìAWS - Create Transit Networkî job template.**
+    7. **Variables, please check ‚ÄúPrompt on launch‚Äù**.  **This is because some of these values won‚Äôt be available until later AFTER you run the ‚ÄúAWS - Create Transit Network‚Äù job template.**
 
 ```
 ---
@@ -511,7 +511,7 @@ security_group_id: sg-06c7384e268?????
 
 
 
-4. Click ì**Save**î at the bottom of the screen.
+4. Click ‚Äú**Save**‚Äù at the bottom of the screen.
 
 ***
 <h5>Delete VM</h5>
@@ -519,8 +519,8 @@ security_group_id: sg-06c7384e268?????
 
 
 
-1. Click the ì**Templates**î link under ì**Resources**î in the left menu.
-2. Click the ì**Add**î button, then ì**Add job Template**î.
+1. Click the ‚Äú**Templates**‚Äù link under ‚Äú**Resources**‚Äù in the left menu.
+2. Click the ‚Äú**Add**‚Äù button, then ‚Äú**Add job Template**‚Äù.
 3. Fill the following fields:
     1. **Name**: AWS - Delete RHEL 8 VM
     2. **Job Type**: Run
@@ -536,7 +536,7 @@ aws_region: <your-aws-region> # Replace with your region
 ```
 
 
-4. Click ì**Save**î at the bottom of the screen.
+4. Click ‚Äú**Save**‚Äù at the bottom of the screen.
 
 ***
 <h3>Content Testing</h3>
@@ -553,7 +553,7 @@ aws_region: <your-aws-region> # Replace with your region
 
 
 
-1. Run ì**AWS - Create Transit Network**î template (will take 10 minutes or more to complete).  **Resources** -> **Templates** -> ì**AWS - Create Transit Network**î, and click the launch icon.   **When the job has completed Successfully**, move to step 2.
+1. Run ‚Äú**AWS - Create Transit Network**‚Äù template (will take 10 minutes or more to complete).  **Resources** -> **Templates** -> ‚Äú**AWS - Create Transit Network**‚Äù, and click the launch icon.   **When the job has completed Successfully**, move to step 2.
 2. In the AWS Console, verify that you now have the following architecture deployed in the region that you defined in the extra-vars for the template.
     1. EC2 Dashboard screen - Ensure that there are **two new EC2 instances** running (dmz-..., priv-....)
     2. VPC dashboard screen - Ensure that there are **two new VPCs** (dmz-vpc, private-network-vpc), in addition to the one originally created by the AAP on AWS deployment.
@@ -563,13 +563,13 @@ aws_region: <your-aws-region> # Replace with your region
 
 ![alt_text](images/image29.png "image_tooltip")
 
-3. In the AWS Console - **VPC Dashboard** -> **Your VPCs** -> **dmz-vpc** , collect the ì**Subnet ID**ì for the **DMZ-VPC** subnet and the ì**Security group ID**î for the subnet.
+3. In the AWS Console - **VPC Dashboard** -> **Your VPCs** -> **dmz-vpc** , collect the ‚Äú**Subnet ID**‚Äú for the **DMZ-VPC** subnet and the ‚Äú**Security group ID**‚Äù for the subnet.
 
 ![alt_text](images/image30.png "image_tooltip")
 
 ![alt_text](images/image31.png "image_tooltip")
 
-4. Run the ì**AWS - Create RHEL 8 VM**î template.  Since you configured the extra vars to be configured on launch, update the ì**vpc_subnet_id**î and ì**security_group_id**î variables with the **values that you collected in the previous step**.
+4. Run the ‚Äú**AWS - Create RHEL 8 VM**‚Äù template.  Since you configured the extra vars to be configured on launch, update the ‚Äú**vpc_subnet_id**‚Äù and ‚Äú**security_group_id**‚Äù variables with the **values that you collected in the previous step**.
     1. You will be prompted for the variables.  Here again is a sample clean variable file snippet.
 
 ```
@@ -603,8 +603,8 @@ security_group_id: sg-06c7384e268?????
 
 
 
-1. Run the ì**AWS - Delete RHEL 8 VM**î template (can take 3 - 5 mins).
-2. Run the ì**AWS - Delete Transit Network**î template (can take approx 20 mins).
+1. Run the ‚Äú**AWS - Delete RHEL 8 VM**‚Äù template (can take 3 - 5 mins).
+2. Run the ‚Äú**AWS - Delete Transit Network**‚Äù template (can take approx 20 mins).
 3. Delete the 2 **Network load balancers** you created earlier.  (These were created outside of the AAP on AWS cloudformation deployment)
 4. Delete the 2 **Target groups** you created earlier.  (These were created outside of the AAP on AWS cloudformation deployment)
 5. Follow instructions on [Deleting a stack on the AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html). This process can take up to 45 minutes or more.
@@ -652,11 +652,11 @@ Customers have the full functionality of the Ansible Automation Platform as part
 
 
 1. Log in to the Private Automation Hub UI.  Use admin for the username, and the Administrator Password you retrieved earlier.
-2. Expand the ì**Collections**î menu on the left, and then select ì**Collections**î, adjust the ì**Filter by repository**î to ì**Red Hat Certified**î and notice you have NO content there.
-3. Select ì**Repository Management**î from the menu on the left, and then select ì**Remote**î.
+2. Expand the ‚Äú**Collections**‚Äù menu on the left, and then select ‚Äú**Collections**‚Äù, adjust the ‚Äú**Filter by repository**‚Äù to ‚Äú**Red Hat Certified**‚Äù and notice you have NO content there.
+3. Select ‚Äú**Repository Management**‚Äù from the menu on the left, and then select ‚Äú**Remote**‚Äù.
 ![alt_text](images/image33.png "image_tooltip")
 
-4. Select the **3 vertical dots** (vertical ellipsis), and then select ì**Edit**î to synchronize Red Hat certified content from Red Hat Automation Hub on console.redhat.com.
+4. Select the **3 vertical dots** (vertical ellipsis), and then select ‚Äú**Edit**‚Äù to synchronize Red Hat certified content from Red Hat Automation Hub on console.redhat.com.
 5. Here you have **two options**, the first is to use a **Token**, <span style="text-decoration:underline;">OR</span> the second which is to use your **Red Hat account** on console.redhat.com.  I would recommend **TOKEN**.
 
 ![alt_text](images/image34.png "image_tooltip")
@@ -665,11 +665,11 @@ Customers have the full functionality of the Ansible Automation Platform as part
 
 ![alt_text](images/image35.png "image_tooltip")
 
-7. Insert the Token you just grabbed from console.redhat.com <span style="text-decoration:underline;">OR</span> your Red Hat username and password in the connection dialog and click ì**Save**î, and then select the ì**Sync**î button.  After a few minutes you should see this has completed successfully.
+7. Insert the Token you just grabbed from console.redhat.com <span style="text-decoration:underline;">OR</span> your Red Hat username and password in the connection dialog and click ‚Äú**Save**‚Äù, and then select the ‚Äú**Sync**‚Äù button.  After a few minutes you should see this has completed successfully.
 
 ![alt_text](images/image36.png "image_tooltip")
 
-8. Go back to the ì**Collections**î menu on the left, and then select ì**Collections**î, adjust the ì**Filter by repository**î to ì**Red Hat Certified**î and notice you now DO have content there.
+8. Go back to the ‚Äú**Collections**‚Äù menu on the left, and then select ‚Äú**Collections**‚Äù, adjust the ‚Äú**Filter by repository**‚Äù to ‚Äú**Red Hat Certified**‚Äù and notice you now DO have content there.
 
 ![alt_text](images/image37.png "image_tooltip")
 
@@ -682,13 +682,13 @@ Customers have the full functionality of the Ansible Automation Platform as part
 
 
 
-1. Log in to the Private Automation Hub UI.  If you donít have the URL, please copy it from the Azure AAP application on the ì**Parameters and OutPuts**î page.  Look for ì**automationHubUrl**î.
-2. Expand the ì**Collections**î menu on the left, and then select ì**Collections**î, adjust the ì**Filter by repository**î to ì**Community**î and notice you have NO content there.
-3. Select ì**Repository Management**î from the menu on the left, and then select ì**Remote**î.
+1. Log in to the Private Automation Hub UI.  If you don‚Äôt have the URL, please copy it from the Azure AAP application on the ‚Äú**Parameters and OutPuts**‚Äù page.  Look for ‚Äú**automationHubUrl**‚Äù.
+2. Expand the ‚Äú**Collections**‚Äù menu on the left, and then select ‚Äú**Collections**‚Äù, adjust the ‚Äú**Filter by repository**‚Äù to ‚Äú**Community**‚Äù and notice you have NO content there.
+3. Select ‚Äú**Repository Management**‚Äù from the menu on the left, and then select ‚Äú**Remote**‚Äù.
 
 ![alt_text](images/image38.png "image_tooltip")
 
-4. Select the **3 vertical dots** (vertical ellipsis), and then select ì**Edit**î to configure the community repository ([https://galaxy.ansible.com](https://galaxy.ansible.com)) connection and configuration.
+4. Select the **3 vertical dots** (vertical ellipsis), and then select ‚Äú**Edit**‚Äù to configure the community repository ([https://galaxy.ansible.com](https://galaxy.ansible.com)) connection and configuration.
 
 5. Create a file on your computer called **requirements.yml** with the following content.
 
@@ -708,12 +708,12 @@ collections:
 
 
 
-6. Select ì**Browse**î and point to the **requirements.yml **file on your machine.
-7. Select ì**Save**î and then select the ì**Sync**î button.  After a few minutes you should see this has completed successfully.
+6. Select ‚Äú**Browse**‚Äù and point to the **requirements.yml **file on your machine.
+7. Select ‚Äú**Save**‚Äù and then select the ‚Äú**Sync**‚Äù button.  After a few minutes you should see this has completed successfully.
 
 ![alt_text](images/image39.png "image_tooltip")
 
-8. Go back to the ì**Collections**î menu on the left, and then select ì**Collections**î, adjust the ì**Filter by repository**î to ì**Community**î and notice you now DO have content there.
+8. Go back to the ‚Äú**Collections**‚Äù menu on the left, and then select ‚Äú**Collections**‚Äù, adjust the ‚Äú**Filter by repository**‚Äù to ‚Äú**Community**‚Äù and notice you now DO have content there.
 ![alt_text](images/image40.png "image_tooltip")
 
 9. This Community content can now be consumed by the Ansible Automation Controller.
