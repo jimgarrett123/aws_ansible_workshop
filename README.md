@@ -44,4 +44,3 @@ After obtaining these from your instructor, please click on the the link **Prepa
 
 [13. Deprovision Resources](pages/page13.md)
 
-[Appendix](pages/page14.md)
