@@ -32,7 +32,7 @@ After obtaining these from your instructor, please click on the the link **Prepa
 
 [7. Access Private Automation Hub console](pages/page7.md)
 
-[8. Access theExecution Environment](pages/page8.md)
+[8. Access the Execution Environment](pages/page8.md)
 
 [9. Delete Transit Network](pages/page9.md)
 
