@@ -34,7 +34,7 @@ After obtaining these from your instructor, please click on the the link **Prepa
 
 [8. Access the Execution Environment](pages/page8.md)
 
-[9. Delete Transit Network](pages/page9.md)
+[9. Create Transit Network](pages/page9.md)
 
 [10. Create Virtual Machine (EC2 Instance)](pages/page10.md)
 
