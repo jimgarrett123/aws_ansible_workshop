@@ -27,14 +27,11 @@
 ```
 ---
 aws_region: <your-aws-region>
-aws_keypair_name: <your-initials>-aaponaws-<monthyear>
+aws_keypair_name: <your-initials>-aaponaws-mar2023
 aws_instance_size: t2.micro
 vm_blueprint: rhel8
-vm_name: demo_vm
-vm_deployment: ansible
-vm_purpose: create-vm-demo
-ansible-role: create_vm
-ansible-collection: aws.infrastructure_config_demos
+aws_securitygroup_name: dmz-sg
+aws_vpc_subnet_name: dmz-subnet
 ```
 
 
