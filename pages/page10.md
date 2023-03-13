@@ -16,29 +16,21 @@ This job will create a virtual machine in an existing AWS VPC as described in th
 ```
 ---
 aws_region: <your-aws-region>
-aws_keypair_name: <your-initials>-aaponaws-<monthyear>
-aws_instance_size: <instance-size>
-vm_blueprint: rhel8
-vm_name: demo_vm
-vm_deployment: ansible
-vm_purpose: create-vm-demo
-ansible-role: create_vm
-ansible-collection: aws.infrastructure_config_demos
+priv_network_instance_ami: ami-06640050dc3f556bb # Replace with the proper RHEL AMI for your region. A table of AMIs is below.
+dmz_instance_ami: ami-06640050dc3f556bb # Replace with the proper RHEL AMI for your region. A table of AMIs is below.
+dmz_ssh_key_name: <your-initials>-aaponaws-<monthyear> # replace with the name of the AWS SSH key that you created at the start of this exercise
+priv_network_ssh_key_name: <your-initials>-aaponaws-<monthyear> # replace with the name of the AWS SSH key that you created at the start of this exercise
 ```
 
 The finished Variable section will look like the following:
 
 ```
 ---
-aws_region: us-east-2
-aws_keypair_name: jag-aaponaws-march2023
-aws_instance_size: t2.micro
-vm_blueprint: rhel8
-vm_name: demo_vm
-vm_deployment: ansible
-vm_purpose: create-vm-demo
-ansible-role: create_vm
-ansible-collection: aws.infrastructure_config_demos
+aws_region: us-east-1
+priv_network_instance_ami: ami-06640050dc3f556bb
+dmz_instance_ami: ami-06640050dc3f556bb
+dmz_ssh_key_name: hm-aaponaws-jan2023
+priv_network_ssh_key_name: hm-aaponaws-jan2023
 ```
 
 
