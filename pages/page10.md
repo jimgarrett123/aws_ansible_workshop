@@ -37,47 +37,6 @@ aws_vpc_subnet_name: dmz-subnet
 
 
 
-<table>
-  <tr>
-   <td><strong>AWS Region</strong>
-   </td>
-   <td><strong>RHEL AMI</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>eu-central-1
-   </td>
-   <td>ami-0e7e134863fac4946
-   </td>
-  </tr>
-  <tr>
-   <td>us-east-1
-   </td>
-   <td>ami-06640050dc3f556bb
-   </td>
-  </tr>
-  <tr>
-   <td>us-east-2
-   </td>
-   <td>ami-092b43193629811af
-   </td>
-  </tr>
-  <tr>
-   <td>us-west-1
-   </td>
-   <td>ami-0186e3fec9b0283ee
-   </td>
-  </tr>
-  <tr>
-   <td>us-west-2
-   </td>
-   <td>ami-08970fb2e5767e3b8
-   </td>
-  </tr>
-</table>
-
-
-
 
 4. Click “**Save**” at the bottom of the screen.
 
