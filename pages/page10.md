@@ -21,6 +21,7 @@ aws_instance_size: t2.micro
 vm_blueprint: rhel8
 aws_securitygroup_name: dmz-sg
 aws_vpc_subnet_name: dmz-subnet
+aws_subnet_id: <dmz-subnet-id>
 ```
 
 The finished Variable section will look like the following:
@@ -33,6 +34,7 @@ aws_instance_size: t2.micro
 vm_blueprint: rhel8
 aws_securitygroup_name: dmz-sg
 aws_vpc_subnet_name: dmz-subnet
+aws_subnet_id: subnet-039be156ec927c7ed
 ```
 
 
