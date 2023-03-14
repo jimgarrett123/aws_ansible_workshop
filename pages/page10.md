@@ -16,10 +16,11 @@ This job will create a virtual machine in an existing AWS VPC as described in th
 ```
 ---
 aws_region: <your-aws-region>
-priv_network_instance_ami: ami-06640050dc3f556bb # Replace with the proper RHEL AMI for your region. A table of AMIs is below.
-dmz_instance_ami: ami-06640050dc3f556bb # Replace with the proper RHEL AMI for your region. A table of AMIs is below.
-dmz_ssh_key_name: <your-initials>-aaponaws-<monthyear> # replace with the name of the AWS SSH key that you created at the start of this exercise
-priv_network_ssh_key_name: <your-initials>-aaponaws-<monthyear> # replace with the name of the AWS SSH key that you created at the start of this exercise
+aws_keypair_name: <your-initials>-aaponaws-<monthyear> # Replace with the name of the AWS SSH key that you created at the start of this exercise
+aws_instance_size: t2.micro
+vm_blueprint: rhel8
+aws_securitygroup_name: dmz-sg
+aws_vpc_subnet_name: dmz-subnet
 ```
 
 The finished Variable section will look like the following:
@@ -27,10 +28,11 @@ The finished Variable section will look like the following:
 ```
 ---
 aws_region: us-east-1
-priv_network_instance_ami: ami-06640050dc3f556bb
-dmz_instance_ami: ami-06640050dc3f556bb
-dmz_ssh_key_name: hm-aaponaws-jan2023
-priv_network_ssh_key_name: hm-aaponaws-jan2023
+aws_keypair_name: hm-aaponaws-mar2023
+aws_instance_size: t2.micro
+vm_blueprint: rhel8
+aws_securitygroup_name: dmz-sg
+aws_vpc_subnet_name: dmz-subnet
 ```
 
 
