@@ -1,4 +1,4 @@
-<h1>Ansible on Clouds - AWS - RHPDS Guide</h1>
+<h1>Ansible Automation Platform on AWS</h1>
 
 
 <h2>Introduction</h2>
