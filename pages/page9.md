@@ -7,7 +7,7 @@ This job will deploy a transit peering network model as described in the collect
 1. Click the “**Templates**” link under “**Resources**” in the left menu.
 2. Click the “**Add**” button, then “**Add job Template**”.
 3. Fill the following fields:
-    1. **Name**: AWS - Create Transit Network
+    1. **Name**: ```AWS - Create Transit Network```
     2. **Job Type**: Run
     3. **Inventory**: Demo Inventory
     4. **Project**: AWS - Content Lab Infrastructure Config Demos
@@ -92,7 +92,7 @@ priv_network_ssh_key_name: hm-aaponaws-jan2023
 1. Click the “**Templates**” link under “**Resources**” in the left menu.
 2. Click the “**Add**” button, then “**Add job Template**”.
 3. Fill the following fields:
-    1. **Name**:  AWS - Delete Transit Network
+    1. **Name**:  ```AWS - Delete Transit Network```
     2. **Job Type**: Run
     3. **Inventory**: Demo Inventory
     4. **Project**: AWS - Content Lab Infrastructure Config Demos

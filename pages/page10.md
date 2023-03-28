@@ -5,7 +5,7 @@ This job will create a virtual machine in an existing AWS VPC as described in th
 1. Click the “**Templates**” link under “**Resources**” in the left menu.
 2. Click the “**Add**” button, then “**Add job Template**”.
 3. Fill the following fields:
-    1. **Name**: AWS - Create RHEL 8 VM
+    1. **Name**: ```AWS - Create RHEL 8 VM```
     2. **Job Type**: Run
     3. **Inventory**: Demo Inventory
     4. **Project**: AWS - Content Lab Infrastructure Config Demos
