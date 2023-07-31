@@ -4,8 +4,8 @@
 
 This job will deploy a transit peering network model as described in the collection [readme](https://github.com/ansible-content-lab/aws.infrastructure_config_demos/blob/main/roles/manage_transit_peered_networks/README.md).
 
-1. Click the “**Templates**” link under “**Resources**” in the left menu.
-2. Click the “**Add**” button, then “**Add job Template**”.
+1. Click the ï¿½**Templates**ï¿½ link under ï¿½**Resources**ï¿½ in the left menu.
+2. Click the ï¿½**Add**ï¿½ button, then ï¿½**Add job Template**ï¿½.
 3. Fill the following fields:
     1. **Name**: ```AWS - Create Transit Network```
     2. **Job Type**: Run
@@ -33,6 +33,7 @@ priv_network_instance_ami: ami-<your-region-ami#>
 dmz_instance_ami: ami-<your-region-ami#>
 dmz_ssh_key_name: <your-initials>-aaponaws-<monthyear>
 priv_network_ssh_key_name: <your-initials>-aaponaws-<monthyear>
+operation: create
 ```
 
 My example is:
@@ -44,6 +45,7 @@ priv_network_instance_ami: ami-06640050dc3f556bb
 dmz_instance_ami: ami-06640050dc3f556bb
 dmz_ssh_key_name: hm-aaponaws-jan2023
 priv_network_ssh_key_name: hm-aaponaws-jan2023
+operation: create
 ```
 
 <table>
@@ -85,12 +87,12 @@ priv_network_ssh_key_name: hm-aaponaws-jan2023
   </tr>
 </table>
 
-4. Click “**Save**” at the bottom of the screen.
+4. Click ï¿½**Save**ï¿½ at the bottom of the screen.
 ***
 <h1>Delete Transit Network</h1>
 
-1. Click the “**Templates**” link under “**Resources**” in the left menu.
-2. Click the “**Add**” button, then “**Add job Template**”.
+1. Click the ï¿½**Templates**ï¿½ link under ï¿½**Resources**ï¿½ in the left menu.
+2. Click the ï¿½**Add**ï¿½ button, then ï¿½**Add job Template**ï¿½.
 3. Fill the following fields:
     1. **Name**:  ```AWS - Delete Transit Network```
     2. **Job Type**: Run
@@ -103,10 +105,11 @@ priv_network_ssh_key_name: hm-aaponaws-jan2023
 ```
 ---
 aws_region: <your-aws-region> # Replace with your region
+operation: delete
 ```
 
 
-4. Click “**Save**” at the bottom of the screen.
+4. Click ï¿½**Save**ï¿½ at the bottom of the screen.
 
 [NEXT - Create Virtual Machine Template](page10.md)
 
