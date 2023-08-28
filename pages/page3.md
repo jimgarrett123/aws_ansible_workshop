@@ -6,7 +6,7 @@
 
 
 
-1. Now that you have launched the cloudformation stack, you’re ready to start configuration prior to launching the AAP on AWS offer.
+1. Now that you have launched the cloudformation stack, you're ready to start configuration prior to launching the AAP on AWS offer.
 2. For the **Fulfillment option**, please select **Ansible Platform CloudFormation Topology.**
 3. For the **Software version**, please select the latest version / date available in the list.
 4. For the **Region**, please select the region that you decided on earlier
@@ -44,6 +44,7 @@ It may take 30 minutes or longer for the infrastructure and application to fully
 
 ---
 **NOTE:**
+
 **Troubleshooting / Workaround note**.  If for some reason you experience a deployment failure you will need to delete the deployment stack, wait a few minutes, and start over please.
 ---
 
