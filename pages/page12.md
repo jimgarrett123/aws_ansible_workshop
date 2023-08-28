@@ -6,7 +6,7 @@
 
 **Instructions**:
 
-1. Run “**AWS - Create Transit Network**” template (will take 10 minutes or more to complete).  **Resources** -> **Templates** -> “**AWS - Create Transit Network**”, and click the launch icon.   **When the job has completed Successfully**, move to step 2.
+1. Run **AWS - Create Transit Network** template (will take 10 minutes or more to complete).  **Resources** -> **Templates** -> **AWS - Create Transit Network**, and click the launch icon.   **When the job has completed Successfully**, move to step 2.
 2. In the AWS Console, verify that you now have the following architecture deployed in the region that you defined in the extra-vars for the template.
     1. EC2 Dashboard screen - Ensure that there are **two new EC2 instances** running (dmz-..., priv-....)
     2. VPC dashboard screen - Ensure that there are **two new VPCs** (dmz-vpc, private-network-vpc), in addition to the one originally created by the AAP on AWS deployment.
@@ -16,13 +16,13 @@
 
 ![alt_text](images/image29.png "image_tooltip")
 
-3. In the AWS Console - **VPC Dashboard** -> **Your VPCs** -> **dmz-vpc** , collect the “**Subnet ID**“ for the **DMZ-VPC** subnet and the “**Security group ID**” for the subnet.
+3. In the AWS Console - **VPC Dashboard** -> **Your VPCs** -> **dmz-vpc** , collect the **Subnet ID** for the **DMZ-VPC** subnet and the **Security group ID** for the subnet.
 
 ![alt_text](images/image30.png "image_tooltip")
 
 ![alt_text](images/image31.png "image_tooltip")
 
-4. Run the “**AWS - Create RHEL 8 VM**” template.
+4. Run the **AWS - Create RHEL 8 VM** template.
 
 ```
 ---

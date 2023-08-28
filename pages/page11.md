@@ -1,7 +1,7 @@
 <h1>Delete Virtual Machine (EC2 Instance)</h1>
 
-1. Click the “**Templates**” link under “**Resources**” in the left menu.
-2. Click the “**Add**” button, then “**Add job Template**”.
+1. Click the **Templates** link under **Resources** in the left menu.
+2. Click the **Add** button, then **Add job Template**.
 3. Fill the following fields:
     1. **Name**: ```AWS - Delete RHEL 8 VM```
     2. **Job Type**: Run
@@ -17,6 +17,6 @@ aws_region: <your-aws-region> # Replace with your region
 ```
 
 
-4. Click “**Save**” at the bottom of the screen.
+4. Click **Save** at the bottom of the screen.
 
 [NEXT - Ansible Automation Controller Functionality](page12.md)

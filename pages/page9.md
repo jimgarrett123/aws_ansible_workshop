@@ -4,8 +4,8 @@
 
 This job will deploy a transit peering network model as described in the collection [readme](https://github.com/ansible-content-lab/aws.infrastructure_config_demos/blob/main/roles/manage_transit_peered_networks/README.md).
 
-1. Click the �**Templates**� link under �**Resources**� in the left menu.
-2. Click the �**Add**� button, then �**Add job Template**�.
+1. Click the **Templates** link under **Resources** in the left menu.
+2. Click the **Add** button, then **Add job Template**.
 3. Fill the following fields:
     1. **Name**: ```AWS - Create Transit Network```
     2. **Job Type**: Run
@@ -87,12 +87,12 @@ operation: create
   </tr>
 </table>
 
-4. Click �**Save**� at the bottom of the screen.
+4. Click **Save** at the bottom of the screen.
 ***
 <h1>Delete Transit Network</h1>
 
-1. Click the �**Templates**� link under �**Resources**� in the left menu.
-2. Click the �**Add**� button, then �**Add job Template**�.
+1. Click the **Templates** link under **Resources** in the left menu.
+2. Click the **Add** button, then **Add job Template**.
 3. Fill the following fields:
     1. **Name**:  ```AWS - Delete Transit Network```
     2. **Job Type**: Run
@@ -109,7 +109,7 @@ operation: delete
 ```
 
 
-4. Click �**Save**� at the bottom of the screen.
+4. Click **Save** at the bottom of the screen.
 
 [NEXT - Create Virtual Machine Template](page10.md)
 
