@@ -70,16 +70,21 @@ From the **EC2 dashboard** scroll down to the **Target Groups** under **Load Bal
 
 3. For the Load balancer name call it **controller**
 
+![alt_text](images/image18.png "image_tooltip")
+
 4. From the **VPC** drop-down select your **aap/network/vpc**
 
 5. Under **Mappings** select the availability zones and from the drop-down make sure you have selected the **PUBLIC subnet**
 
-![alt_text](images/image18.png "image_tooltip")
-
 ![alt_text](images/image19.png "image_tooltip")
 
-6. Continue scrolling down to create a TCP Listener under **Listeners and routing**.
-7. From the **Default action** drop-down select **controller-tg**, then scroll down and select **Create load balancer**
+6. Scroll down to the **Security Groups** section and delete the **Default** security rule.
+
+![security](images/security.png "image_tooltip")
+
+7. Continue scrolling down to create a TCP Listener under **Listeners and routing**.
+
+8. From the **Default action** drop-down select **controller-tg**, then scroll down and select **Create load balancer**
 
 ![alt_text](images/image20.png "image_tooltip")
 
@@ -89,13 +94,15 @@ From the **EC2 dashboard** scroll down to the **Target Groups** under **Load Bal
 3. For the Load balancer name call it **hub**
 4. From the **VPC** drop-down select your **aap/network/vpc**.
 5. Under **Mappings** select the availability zones and from the drop-down make sure you have selected the **PUBLIC subnet**
-6. Continue scrolling down to create a TCP Listener under **Listeners and routing.**
-7. From the **Default action** drop-down select **hub-tg**, then scroll down and select **Create load balancer**
-
-![alt_text](images/image21.png "image_tooltip")
+6. Scroll down to the **Security Groups** section and delete the **Default** security rule.
+7. Continue scrolling down to create a TCP Listener under **Listeners and routing.**
+8. From the **Default action** drop-down select **hub-tg**, then scroll down and select **Create load balancer**
 
 # 7. Visit the **Load Balancers** console to view the load balancers you created. 
     It might take a few minutes for the load balancer status to change from **Provisioning** to **Active.** Continue to the next step when both Load Balancers have a **State** of **Active**.
+
+![alt_text](images/image21.png "image_tooltip")
+
 
 # 8. To get the URLs for the Automation controller and Private automation hub, select each load balancer respectively (**controller** and **hub**), and copy the **DNS name** URL.  
     The URL provided for the **Controller** Load Balancer equates to how someone would access the Ansible Automat Platform Console, and the **Hub** URL is for the Automation Hub Console.
