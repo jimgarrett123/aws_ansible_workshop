@@ -14,6 +14,7 @@
 ```
 ---
 aws_region: <your-aws-region> # Replace with your region
+vm_name: demo_vm
 ```
 
 

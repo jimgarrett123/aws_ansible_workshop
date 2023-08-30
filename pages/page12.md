@@ -24,16 +24,6 @@
 
 4. Run the **AWS - Create RHEL 8 VM** template.
 
-```
----
-aws_region: <your-aws-region>
-aws_keypair_name: <your-initials>-aaponaws-mar2023
-aws_instance_size: t2.micro
-vm_blueprint: rhel8
-aws_securitygroup_name: dmz-sg
-aws_vpc_subnet_name: dmz-subnet
-```
-
 
 5. Verify that you have a new EC2 instance running named **demo_vm**.
 

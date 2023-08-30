@@ -13,8 +13,6 @@
 4. Delete the 2 **Target groups** you created earlier.  (These were created outside of the AAP on AWS cloudformation deployment)
 5. Follow instructions on [Deleting a stack on the AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html). This process can take up to 45 minutes or more.
 
-**NOTE:  (Only perform steps 3 through 5 if you do NOT want to perform the testing in the Appendix)**.
-
 ![alt_text](images/image32.png "image_tooltip")
 
 
