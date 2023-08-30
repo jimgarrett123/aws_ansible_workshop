@@ -111,5 +111,5 @@ operation: delete
 
 4. Click **Save** at the bottom of the screen.
 
-[NEXT - Create Virtual Machine Template](page10.md)
+# [NEXT - Create Virtual Machine Template](page10.md)
 

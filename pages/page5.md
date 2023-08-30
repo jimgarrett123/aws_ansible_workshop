@@ -12,4 +12,4 @@
 3. On the next screen scroll down to the **Secret value** section, and select **Retrieve secret value**, and copy the **admin** password.
 4. Use this Username and Password combination to Login to the Ansible Automation Platform and the Automation Hub consoles.
 
-[NEXT - Access Automation Controller Console](page6.md)
+# [NEXT - Access Automation Controller Console](page6.md)

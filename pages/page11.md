@@ -19,4 +19,4 @@ aws_region: <your-aws-region> # Replace with your region
 
 4. Click **Save** at the bottom of the screen.
 
-[NEXT - Ansible Automation Controller Functionality](page12.md)
+# [NEXT - Ansible Automation Controller Functionality](page12.md)

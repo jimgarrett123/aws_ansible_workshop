@@ -37,4 +37,4 @@ aws_vpc_subnet_name: dmz-subnet
 
 5. Verify that you have a new EC2 instance running named **demo_vm**.
 
-[NEXT - Deprovision Resources](page13.md)
+# [NEXT - Deprovision Resources](page13.md)

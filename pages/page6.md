@@ -15,7 +15,9 @@
         2. Use your Red Hat credentials (access.redhat.com) to retrieve subscription options.
         3. Select a subscription. The **60 Day Product Trial** for **Red Hat Ansible Automation Platform** is a safe default.
         4. Select **Next**.
-![alt_text](images/image26.png "image_tooltip")
+
+    ![alt_text](images/image26.png "image_tooltip")
+
 3. User and Automation Analytics
     1. Disable User analytics and Automation Analytics by unselecting the check boxes.
     2. Select **Next**.
@@ -23,4 +25,4 @@
     1. Read the agreement and select **Submit**.
 
 
-[NEXT - Create Ansible Credentials Containing AWS Access Key](page7.md)
+# [NEXT - Create Ansible Credentials Containing AWS Access Key](page7.md)

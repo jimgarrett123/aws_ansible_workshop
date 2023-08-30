@@ -24,4 +24,4 @@ Make sure it has synchronized and shows **Successful**.  If it doesnt show succe
 ![alt_text](images/image28.png "image_tooltip")
 
 
-[NEXT - Create Job Templates](page9.md)
+# [NEXT - Create Job Templates](page9.md)

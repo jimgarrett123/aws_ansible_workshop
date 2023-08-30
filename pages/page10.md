@@ -38,4 +38,4 @@ create_vm_aws_region: us-east-1
 
 4. Click **Save** at the bottom of the screen.
 
-[NEXT - Delete Virtual Machine](page11.md)
+# [NEXT - Delete Virtual Machine](page11.md)
