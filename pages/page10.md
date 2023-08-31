@@ -27,10 +27,10 @@ The finished Variable section will look like the following:
 ```
 ---
 vm_blueprint: rhel8
-create_vm_aws_keypair_name: jag-aaponaws-july2023
+create_vm_aws_keypair_name: jag-aaponaws-aug23
 create_vm_aws_securitygroup_name: dmz-sg
 create_vm_aws_vpc_subnet_name: dmz-subnet
-create_vm_aws_region: us-east-1
+create_vm_aws_region: us-east-2
 ```
 
 
