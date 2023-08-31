@@ -40,11 +40,11 @@ My example is:
 
 ```
 ---
-aws_region: us-east-1
-priv_network_instance_ami: ami-06640050dc3f556bb
+aws_region: us-east-2
+priv_network_instance_ami: ami-092b43193629811af
 dmz_instance_ami: ami-06640050dc3f556bb
-dmz_ssh_key_name: hm-aaponaws-jan2023
-priv_network_ssh_key_name: hm-aaponaws-jan2023
+dmz_ssh_key_name: jag-aaponaws-aug23
+priv_network_ssh_key_name: jag-aaponaws-aug23
 operation: create
 ```
 
